@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+body {
+  background-image: url("./basketball.png");
+  overflow-x: hidden;
+}
+
+.app__heading {
+  font-family: sans-serif;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.blog-container {
+  margin: 2rem auto;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+}
+.blog {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: .25rem;
+  padding: .5rem 1.5rem;
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 150ms;
+  font-family: sans-serif;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.blog.show {
+  transform: translateX(0);
+  opacity: 1;
+}
+.blog-title {
+  color: #111;
+  margin-bottom: 10px;
+}
+.blog-content p:first-child{
+  color: #333;
+  /* margin: 10px 0; */
+  font-size: 1.1rem;
+}
+.author-section {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.author-basic_info {
+  font-style: italic;
+}
+.author-socials {
+  display: flex;
+  justify-content: flex-start;
+}
+.author-socials h4 {
+  margin-right: 10px;
+}
+.author-socials li {
+  list-style-type: none;
+  margin-right: 1rem;
+}
+.author-socials li a {
+  color: #222;
+}
+.author-socials li a i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: blueviolet;
+  transition: all 0.4s ease-in-out;
+}
+@media screen and (max-width: 1150px) {
+  .blog-container {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .blog-container {
+    width: 80%
+  }
+}
