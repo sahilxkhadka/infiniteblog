@@ -21,6 +21,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   align-items: flex-start;
+  overflow-x: hidden;
 }
 .blog {
   width: 100%;
